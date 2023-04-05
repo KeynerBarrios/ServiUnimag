@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+}
+
+.container-fluid{
+    display: flex;
+    background: #004A87;
+    height: 80px;
+    align-items: center;
+}
+
+.Logo{
+    height: 90%;
+    margin-left: 10px;
+}
+
+.navbar-brand{
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.collapse{
+    margin-left: 500px;
+}
+
+.nav-link{
+    margin-left: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
