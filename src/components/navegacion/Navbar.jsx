@@ -11,8 +11,8 @@ function Navbar() {
                 <a className="navbar-brand" href="#">ServiUnimag</a>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        <a className="nav-link active" aria-current="page" href="#">Inicio</a>
-                        <a className="nav-link" href="#">Monitor</a>
+                        <a className="nav-link active" aria-current="page" href="/">Inicio</a>
+                        <a className="nav-link" href='/Monitor'>Monitor</a>
                         <a className="nav-link" href="#">Estudiantes</a>
                         <a className="nav-link disabled" href='#'>Unimag</a>
                         <a className="nav-link disabled" href='#'>Información</a>

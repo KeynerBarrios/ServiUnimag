@@ -5,7 +5,7 @@ import Navbar from '../../components/navegacion/Navbar'
 const Inicio = () => {
   return (
     <>
-    <Navbar></Navbar>
+    
     <div className='container'>
         
         <section className='container-content'>
