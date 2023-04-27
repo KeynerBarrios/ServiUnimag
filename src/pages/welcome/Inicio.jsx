@@ -1,6 +1,5 @@
 import React from 'react'
 import './Inicio.css'
-import Navbar from '../../components/navegacion/Navbar'
 
 const Inicio = () => {
   return (

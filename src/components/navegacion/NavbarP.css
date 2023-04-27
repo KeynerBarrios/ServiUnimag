@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Navbar-container{
+    display: flex;
+    background: #004A87;
+    align-items: center;
+    padding: 5px;
+}
+
+.direction{
+    margin-right: 15px;
+}
+
+.Navbar-name{
+    margin-left: 15px;
+    margin-right: 250px;
+}
+
+.Logo{
+    width: 7%;
+}
+
+.content{
+    display: flex;
+}
+
+.Nav-link{
+    margin-left: 55px;
+}
+
+.codigo{
+    margin-left: 85px;
+    text-decoration: none;
+}
+
+.nombre{
+    margin-left: 105px;
+    text-decoration: none;
+}
+
+
+
+.up{
+    width: 50px;
+    height: 50px;
+}
+
+.avatar{
+    width: 100%;;
+    display: inline;
+}

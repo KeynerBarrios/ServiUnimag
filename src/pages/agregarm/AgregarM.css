@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.table-Monitor{
+    border-spacing: 0;
+}
+
+.button-Monitor{
+    width: 30px;
+}
+
+.container-Monitor{
+    border: 1px solid red;
+}
+
+.title-Monitor{
+    text-align: center;
+    padding: 5px;
+    width: 300px;
+}
+
+.texto{
+    height: 5px;
+    padding: 0;
+}
+
+td{
+    border: 1px solid green;
+    text-align: center;
+}

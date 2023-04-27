@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.perfil{
+    display: flex;
+    justify-content: center;
+}
+
+.table-bordered{
+    border-spacing: 7px;
+}
+.paragraph{
+    font-weight: bold;
+}
+
+.tdimg{
+    padding: 10px;
+    vertical-align: top;
+    line-height: 1.42857143;
+    width: 300px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.imagenPerfil{
+    width: 70%;
+    height: 70%;
+}
+
+.tdstyle{
+   
+    background-color: #dddddd3a;
+    padding: 10px;
+    vertical-align: top;
+    line-height: 1.42857143;
+    width: 300px;
+
+}
+
+.separacion{
+    text-align: center;
+}
+
+.buttonsolicitud{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.solicitud{
+    width: 150px;
+    text-transform: uppercase;
+}
+
+.solicitud1{
+    width: 150px;
+    margin-left: 200px;
+    text-transform: uppercase;
+}
