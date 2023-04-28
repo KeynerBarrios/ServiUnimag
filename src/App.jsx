@@ -7,12 +7,15 @@ import Monitor1 from './pages/login/Monitor1'
 import NavbarP from './components/navegacion/NavbarP'
 import MonitorPe from './pages/monitoP/MonitorPe'
 import AgregarM from './pages/agregarm/AgregarM'
+import HorarioM from './pages/horariom/HorarioM'
+import RegistroM from './pages/registrom/RegistroM'
+import HomeM from './pages/homeM/HomeM'
 
 function App() {
   
   return (
     <>
-    <AgregarM></AgregarM>
+    <HomeM></HomeM>
     <Routes>
       {/* <Route path='/EStudiantes' element={<Estudiante></Estudiante>}></Route>
       <Route path='/Monitor' element={<Monitor1></Monitor1>}></Route>

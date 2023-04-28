@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.title-Home-monitor{
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.container-home-monitor{
+    display: flex;
+    justify-content: center;
+}
+
+.table-home-monitor{
+    border-spacing: 7px;
+}
+
+.td-home-monitor-img{
+    padding: 10px;
+    vertical-align: top;
+    line-height: 1.42857143;
+    width: 300px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.imagenPerfil-home{
+    width: 70%;
+    height: 70%;
+}
+
+.td-home-monitor{
+    background-color: #dddddd3a;
+    padding: 10px;
+    vertical-align: top;
+    line-height: 1.8;
+    width: 300px;
+}
+
+.paragraph-home{
+    font-weight: bold;
+}
+
+.buttonsolicitud-home{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.registro{
+    width: 200px;
+    text-transform: uppercase;
+}

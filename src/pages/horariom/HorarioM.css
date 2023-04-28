@@ -4,46 +4,37 @@
     padding: 0;
 }
 
-.Agregar-monitor{
+.title-Horario{
     text-align: center;
-    margin-top: 50px;
-    font-weight: 100;
+    margin-top: 60px;
 }
 
-.table-Monitor{
+.table-horario{
     border-spacing: 0;
 }
 
-.button-Monitor{
-    width: 70px;
-    height: 25px;
-    border: none;
-    background-color: white;
-    color: darkblue;
-    cursor: pointer;
-}
-
-.container-Monitor{
+.container-horario{
     display: flex;
     justify-content: center;
 }
 
-.title-Monitor{
+.td-horario-title{
     text-align: center;
     width: 250px;
     height: 50px;
     background-color: #dddddd70;
-    border: 1px solid rgba(128, 128, 128, 0.283);    
+    border: 1px solid rgba(128, 128, 128, 0.283); 
+    font-weight: bolder;
 }
 
-.texto{
+.td-horario{
     width: 300px;
     height: 70px;
     text-align: center;
-    border: 1px solid rgba(128, 128, 128, 0.283);    
+    border: 1px solid rgba(128, 128, 128, 0.283); 
 }
 
-.input-style{
+.input-style-horario{
     text-align: center;
     color: rgba(34, 0, 255, 0.829);
     border: 1px solid  rgba(34, 0, 255, 0.363);
