@@ -10,12 +10,15 @@ import AgregarM from './pages/agregarm/AgregarM'
 import HorarioM from './pages/horariom/HorarioM'
 import RegistroM from './pages/registrom/RegistroM'
 import HomeM from './pages/homeM/HomeM'
+import HorarioER from './pages/horarioer/HorarioER'
+import RegistrarHM from './pages/registrarhm/RegistrarHM'
+import CambiarHM from './pages/cambiarhm/CambiarHM'
 
 function App() {
   
   return (
     <>
-    <HomeM></HomeM>
+    <CambiarHM></CambiarHM>
     <Routes>
       {/* <Route path='/EStudiantes' element={<Estudiante></Estudiante>}></Route>
       <Route path='/Monitor' element={<Monitor1></Monitor1>}></Route>

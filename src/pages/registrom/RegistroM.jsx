@@ -22,7 +22,7 @@ function RegistroM() {
                 <tr>
                     <td colSpan={2} className='td-Listado'>10:30</td>
                     <td colSpan={2} className='td-Listado'>ANDRES PATRICIO LOPEZ FERRER</td>
-                    <td colSpan={2} className='td-Listado'><input className='input-style-horario' type="text" value={"2019214046"} /></td>
+                    <td colSpan={2} className='td-Listado'><input className='input-style-registro' type="text" value={"2019214046"} /></td>
                 </tr>
             </tbody>
         </table>

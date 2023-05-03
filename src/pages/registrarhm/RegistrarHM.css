@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.titl-rhm{
+    text-align: center;
+    margin-top: 70px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.container-rhm{
+    display: flex;
+    justify-content: center;
+}
+
+.input-rhm{
+    display: block;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(34, 0, 255, 0.829);
+    margin-bottom: 30px;
+}
+
+.content-button-rhm{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.button-rhm{
+    width: 140px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #004A87;
+}
+
+.button-cancelar{
+    background-color: white;
+    color: #004A87;
+}
