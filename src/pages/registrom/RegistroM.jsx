@@ -4,7 +4,7 @@ import NavbarP from '../../components/navegacion/NavbarP'
 function RegistroM() {
   return (
     <>
-    <NavbarP></NavbarP>
+
     <h1 className='title-lista-Estudiante'>lista de estudiantes</h1>
     <div className='container-Lista'>
         <table className='table-Listado'>

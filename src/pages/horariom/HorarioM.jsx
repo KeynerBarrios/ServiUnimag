@@ -5,7 +5,6 @@ import NavbarP from '../../components/navegacion/NavbarP'
 function HorarioM() {
   return (
     <>
-    <NavbarP></NavbarP>
     <h1 className='title-Horario'>Horario Monitor</h1>
     <div className='container-horario'>
         <table className='table-horario'>

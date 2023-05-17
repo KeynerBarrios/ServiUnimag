@@ -3,7 +3,12 @@
     margin: 0;
     padding: 0;
 }
-
+.content{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border: 1.5px solid #004A87;
@@ -13,7 +18,7 @@
     transition: 0.3s;
     padding: 10px;
     width: 20%;
-    min-width: 300px;
+    min-width: 250px;
     border-radius: .625rem;
     margin:1.25rem;
 }
@@ -27,7 +32,11 @@ img{
     text-align: center;
 }
 
-.button{
+.name{
+    text-transform: uppercase;
+}
+
+.button-p{
     margin-top: 5px;
     width: 150px;
     height: 30px;
@@ -35,4 +44,6 @@ img{
     background-color: #004A87;
     color: white;
     border-radius: 10px;
+    margin-bottom: 0;
+    text-transform: uppercase;
 }

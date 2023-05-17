@@ -4,9 +4,11 @@
     padding: 0;
 }
 
-body{
-    
+.Logo-E{
+    width: 70px;
+    height: 70px;
 }
+
 
 .container-fluid{
     display: flex;
@@ -15,10 +17,7 @@ body{
     align-items: center;
 }
 
-.Logo{
-    height: 90%;
-    margin-left: 10px;
-}
+
 
 .navbar-brand{
     margin-left: 20px;

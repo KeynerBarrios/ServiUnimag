@@ -1,6 +1,7 @@
 import React from 'react'
 import './NavbarP.css'
 import Logo from '../../assets/img/logo.png'
+import { NavLink } from 'react-router-dom'
 
 function NavbarP() {
   return (
@@ -10,9 +11,8 @@ function NavbarP() {
             <a className='Navbar-name'>ServiUnimag</a>
             <div className='content'>
                 <div className='direction'>
-                    <a className='Nav-link' href="">Inicio</a>
-                    <a className='Nav-link' href="">Monitor</a>
-                    <a className='Nav-link' href="">Estudiante</a>
+                    <NavLink className='Nav-link' to="inicio">Inicio</NavLink>
+                    <NavLink className='Nav-link' to="monitor">Monitor</NavLink>
                     <a className='codigo' href="">2019214046</a>
                     <a className='nombre' href="">Keyner David Barrios Mercado</a>               
                 </div>            

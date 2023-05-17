@@ -5,7 +5,7 @@ import NavbarP from '../../components/navegacion/NavbarP'
 function RegistrarHM() {
   return (
     <>
-    <NavbarP></NavbarP>
+    
     <h1 className='titl-rhm'>regitrar horario</h1>
     <div className='container-rhm'>
         <div className='content-rhm'>

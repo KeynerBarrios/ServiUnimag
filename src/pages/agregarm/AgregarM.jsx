@@ -5,7 +5,6 @@ import './AgregarM.css'
 function AgregarM() {
   return (
     <>
-    <NavbarP></NavbarP>
     <h1 className='Agregar-monitor'>AGREGAR MONITOR</h1>
     <div className='container-Monitor'>
         <table className='table-Monitor'>

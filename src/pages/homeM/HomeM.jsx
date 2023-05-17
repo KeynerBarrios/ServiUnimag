@@ -6,7 +6,6 @@ import Logo from '../../assets/img/logo.png'
 function HomeM() {
   return (
     <>
-    <NavbarP></NavbarP>
     <h1 className='title-Home-monitor'>perfil monitor</h1>
     <div className='container-home-monitor'>
         <table className='table-home-monitor'>

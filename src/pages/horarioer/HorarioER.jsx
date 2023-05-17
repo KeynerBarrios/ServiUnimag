@@ -5,7 +5,6 @@ import NavbarP from '../../components/navegacion/NavbarP'
 function HorarioER() {
   return (
     <>
-    <NavbarP></NavbarP>
     <h1 className='title-her'>horario estudiantes registrados</h1>
     <div className='container-her'>
         <table className='table-her'>

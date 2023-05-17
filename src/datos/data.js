@@ -1,9 +1,4 @@
-import React from 'react'
-import './Monitor.css'
-import Card from '../../components/navegacion/Card'
-
-function Monitor() {
-  const data = [
+const data = [
     {
       id: 1,  
       nombre: "pepito perez",
@@ -27,100 +22,81 @@ function Monitor() {
     {
       id: 5,  
       nombre: "camilo perez",
-      materia: "Base de datos"
+      materia: "Algoritmos y programación"
     },
     {
       id: 6,  
       nombre: "esteban perez",
-      materia: "Base de datos"
+      materia: "Algoritmos y programación"
     },
     {
       id: 7,  
       nombre: "will perez",
-      materia: "Base de datos"
+      materia: "Algoritmos y programación"
     },
     {
       id: 8,  
       nombre: "luis perez",
-      materia: "Base de datos"
+      materia: "Algoritmos y programación"
     },
     {
       id: 9,  
       nombre: "lucas perez",
-      materia: "Calculo vectorial"
+      materia: "Algoritmos y programación"
     },
     {
       id: 10,  
       nombre: "ali perez",
-      materia: "Calculo vectorial"
+      materia: "Algoritmos y programación"
     },
     {
       id: 11,  
       nombre: "joel perez",
-      materia: "Calculo vectorial"
+      materia: "Algoritmos y programación"
     },
     {
       id: 12,  
       nombre: "raul perez",
-      materia: "Calculo vectorial"
+      materia: "Algoritmos y programación"
     },
     {
       id: 13,  
       nombre: "santiago perez",
-      materia: "Calculo integral"
+      materia: "Algoritmos y programación"
     },
     {
       id: 14,  
       nombre: "edgardo perez",
-      materia: "Calculo integral"
+      materia: "Algoritmos y programación"
     },
     {
       id: 15,  
       nombre: "mateo perez",
-      materia: "Calculo integral"
+      materia: "Algoritmos y programación"
     },
     {
       id: 16,  
       nombre: "david perez",
-      materia: "Calculo integral"
+      materia: "Algoritmos y programación"
     },
     {
       id: 17,  
       nombre: "andres perez",
-      materia: "Programación web"
+      materia: "Algoritmos y programación"
     },
     {
       id: 18,  
       nombre: "alvaro perez",
-      materia: "Programación web"
+      materia: "Algoritmos y programación"
     },
     {
       id: 19,  
       nombre: "uriel perez",
-      materia: "Programación web"
+      materia: "Algoritmos y programación"
     },
     {
       id: 20,  
       nombre: "tomas perez",
-      materia: "Programación web"
+      materia: "Algoritmos y programación"
     }
 ]
-  return (
-    <>
-    <div className='nav'>
-    </div>
-    <div className='container-Buscador'>
-      <div className='Busqueda'>
-        <input className='buscardor' type="text" placeholder='Buscar' required />
-        <button className='button-buscar'>Buscar</button>
-      </div>
-    </div> 
-
-    <div className='card1'>
-      <Card data={data}></Card>
-    </div>
-  </>
-  )
-}
-
-export default Monitor

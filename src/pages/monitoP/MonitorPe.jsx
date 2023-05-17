@@ -1,12 +1,21 @@
 import React from 'react'
-import NavbarP from '../../components/navegacion/NavbarP'
 import Logo from '../../assets/img/logo.png'
 import './MonitorPe.css'
+import { useNavigate } from 'react-router-dom'
 
 function MonitorPe() {
+    const navegacion = useNavigate();
+    const agregar = () =>{
+        navegacion('/agregar')
+    }
+
+    const navega = useNavigate();
+    const horario = () => {
+        navega('/horario')
+    }
+
   return (
     <>
-    <NavbarP></NavbarP>
     <h1 className='title'>Perfil de monitor</h1>
     <div className='perfil'>
         <table className='table-bordered'>
@@ -57,8 +66,8 @@ function MonitorPe() {
         </table>
     </div>
     <div className='buttonsolicitud'>
-        <button className='solicitud'>Horario</button>
-        <button className='solicitud1'>Agendar</button>
+        <button onClick={horario} className='solicitud'>Horario</button>
+        <button onClick={agregar}  className='solicitud1'>Agendar</button>
     </div>
     </>
   )

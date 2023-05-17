@@ -5,7 +5,7 @@ import NavbarP from '../../components/navegacion/NavbarP'
 function CambiarHM() {
   return (
     <>
-    <NavbarP></NavbarP>
+    
     <h1 className='titl-chm'>cambiar horario</h1>
     <div className='container-chm'>
         <div className='content-chm'>
