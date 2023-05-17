@@ -1,5 +1,5 @@
 import React from 'react'
-import './Monitor.css'
+import './monitor.css'
 import Card from '../../components/navegacion/Card'
 
 function Monitor() {
