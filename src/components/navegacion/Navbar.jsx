@@ -7,7 +7,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 function Navbar() {
     const navegacion = useNavigate();
     const monitorr = () =>{
-        navegacion('/Monitor1')
+        navegacion('/monitor1')
     }
     return (
         <>
@@ -18,7 +18,7 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                         <a className="nav-link active" aria-current="page" href="https://www.unimagdalena.edu.co/UnidadesOrganizativas/Dependencia/2002">Inicio</a>
-                        <a onClick={monitorr} className="nav-link" href="/Monitor1">Monitor</a>
+                        <a onClick={monitorr} className="nav-link">Monitor</a>
                         {/* <NavLink onClick={monitorr}  className="nav-link"  to="estudiante">Monitor</NavLink> */}
                         <NavLink className="nav-link"  to="/">Estudiantes</NavLink>
                         <NavLink to="unimag"><a className="nav-link disabled" href='#'>Unimag</a></NavLink>

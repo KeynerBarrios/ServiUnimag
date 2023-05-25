@@ -1,15 +1,9 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import './Inicio.css'
 import { useNavigate } from 'react-router-dom'
-import Contexto from '../../context/Contexto'
 
 const Inicio = () => {
-  const {deslogearme} = useContext(Contexto)
-  const navegacion = useNavigate();
-  const login = ()=>{
-    navegacion('/estudiante', {relative:true})
-    deslogearme();
-  }
+  
 
   const navega = useNavigate();
   const monitorp = () => {
@@ -25,7 +19,6 @@ const Inicio = () => {
         <p className='container-content-parrafo'>Puedes acceder a las diferentes listas que te presentamos a continuacion</p>
         <div className='container-content-buttons'>
             <button onClick={monitorp} className='container-content-buttons-button'>Lista de monitores</button>
-            <button onClick={login} className='container-content-buttons-button'>Cerrar Sisión</button>
         </div>
         </section>
         

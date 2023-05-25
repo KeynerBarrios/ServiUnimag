@@ -1,29 +1,24 @@
 import React from 'react'
 import './Card.css'
 import Logo from '../../assets/img/logo.png'
-import { NavLink, useNavigate } from 'react-router-dom'
+import {Link, useNavigate } from 'react-router-dom'
 
-function Card({data}) {
-  const listado = data
-  const navegacion = useNavigate();
-  const perfil = () =>{
-    navegacion('/monitorpe')
-  }
+function Card({monitor}) {
+  
+  
   return (
-    
     <section className='content'>
-      {listado.map((dato) => {
+      {monitor.map((datos) => {
         return(
-          <div className="card" key={dato.id}>
+          <div className="card" key={datos.id}>
             <div>
               <img src={Logo} alt="Avatar" />
             </div>
              <div className='container-card'>
-              <h4 className='name'>{dato.nombre}</h4>
-              <p>{dato.materia}</p>
-              <button className='button-p'onClick={perfil} >perfil</button>
+              <h4 className='name'>{datos.teacher.fullName}</h4>
+              <p>{datos.name}</p>
+              <Link to={'/monitorpe/'+ datos.teacher.id} ><button  className='button-p'>perfil</button></Link>
              </div>
-            
           </div>
         )})
       }
@@ -31,5 +26,4 @@ function Card({data}) {
    
   )
 }
-
 export default Card

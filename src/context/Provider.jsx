@@ -3,37 +3,43 @@ import Contexto from './Contexto'
 import miReducer from './miReducer'
 import types from './types'
 
-const init = () =>{
-    const valor = localStorage.getItem("estado","role")
-    return{
-        estado:!!valor
+const init = () => {
+    const user = localStorage.getItem("valor")
+    return {
+        logeado: !!user,
+        usuario: user
     }
 }
 
 const Provider = ({children}) => {   
-    const [logeado,dispatch] = useReducer(miReducer,{},init)    
-const logearme = () =>{
-    const action = {
-        type:types.login
+    
+    const [autenficacion, dispatch] = useReducer(miReducer,{},init)
+    
+    const logearse = (user='')=>{
+        const action = {
+            type: types.login,
+            payload: user
+        }
+        localStorage.setItem("valor", user)
+        localStorage.setItem("role", user)
+        dispatch(action)
     }
-    localStorage.setItem("estado", true)
-    localStorage.setItem("role", true)
-    dispatch(action)
-}
-const deslogearme = () =>{
-    const action = {
-        type:types.logout
+
+    const deslogearse = () =>{
+        const action = {
+            type: types.logout,
+            payload: null
+        }
+        localStorage.removeItem("valor")
+        dispatch(action)
     }
-    localStorage.removeItem("estado")
-    localStorage.removeItem("role")
-    dispatch(action)
-}
+
 
   return (
     <Contexto.Provider value={{
-        ...logeado,
-        logearme,
-        deslogearme
+        ...autenficacion,
+        logearse,
+        deslogearse
     }}>
         {children}
     </Contexto.Provider>

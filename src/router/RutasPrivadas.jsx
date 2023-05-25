@@ -3,8 +3,8 @@ import Contexto from '../context/Contexto'
 import { Navigate } from 'react-router-dom'
 
 const RutasPrivadas = ({children}) => {
-    const {estado} = useContext(Contexto)
-  return (estado)
+    const {logeado} = useContext(Contexto)
+  return (logeado)
   ?children
   :<Navigate to="/estudiante"/>
 }

@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from '../../assets/img/logo.png'
 import './MonitorPe.css'
-import { useNavigate } from 'react-router-dom'
+import {useNavigate, useParams } from 'react-router-dom'
+import axios from 'axios'
 
 function MonitorPe() {
+
+    const [data, setDatas] = useState([]);
+    const {id} = useParams();
+
+    useEffect(()=> {
+        axios.get('http://localhost:4000/teacher/'+ id )
+        .then(response => {
+            const subjectsData = response.data.data;
+            setDatas(subjectsData);
+            console.log("console",subjectsData)
+        }).catch(error => {
+            console.error(error);
+        });
+    }, []);
+
+
     const navegacion = useNavigate();
     const agregar = () =>{
         navegacion('/agregar')
@@ -28,40 +45,34 @@ function MonitorPe() {
                     </td>
                     <td className='tdstyle' colSpan={3}>
                         <p className='paragraph'>Nombre:</p>
-                        <p>Keyner David Barrios Mercado</p>
+                        <p>{data.fullName}</p>
                     </td>
                     <td className='tdstyle' colSpan={2}>
-                        <p className='paragraph'>Nombre:</p>
-                        <p>Keyner David Barrios Mercado</p>
+                        <p className='paragraph'>Carrera:</p>
+                        <p>{data.career}</p>
                     </td>
                 </tr>
                 <tr>
                     <td className='tdstyle' colSpan={3}>
-                        <p className='paragraph'>Nombre:</p>
-                        <p>Keyner David Barrios Mercado</p>
+                        <p className='paragraph'>Código:</p>
+                        <p>{data.code}</p>
                     </td>
                     <td className='tdstyle' colSpan={2}>
-                        <p className='paragraph'>Nombre:</p>
-                        <p>Keyner David Barrios Mercado</p>
+                        <p className='paragraph'>Semestre:</p>
+                        <p>{data.semester}</p>
                     </td>
                 </tr>
                 <tr>
                     <td className='tdstyle' colSpan={3}>
-                        <p className='paragraph'>Nombre:</p>
-                        <p>Keyner David Barrios Mercado</p>
+                        <p className='paragraph'>Celular:</p>
+                        <p>{data.phone}</p>
                     </td>
                     <td className='tdstyle' colSpan={2}>
-                        <p className='paragraph'>Nombre:</p>
-                        <p>Keyner David Barrios Mercado</p>
+                        <p className='paragraph'>Correo:</p>
+                        <p>ejemplo@unimagadale.edu.co</p>
                     </td>
                 </tr>
-                <tr>
-                    <td className='tdstyle separacion' colSpan={5}>
-                        <p className='paragraph'>Asignatura:</p>
-                        <p>Programacion</p>
-                    </td>
-                    
-                </tr>
+                
             </tbody>
         </table>
     </div>

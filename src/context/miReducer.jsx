@@ -5,11 +5,13 @@ const miReducer = (state = {}, action) => {
     switch(action.type){
         case types.login:
             return{
-                estado:true
+                logeado:true,
+                usuario: action.payload
             }
         case types.logout:
             return{
-                estado:false
+                logeado:false,
+                usuario: null
             }
         default:
             return state;        

@@ -1,13 +1,13 @@
 import HomeM from "../pages/homeM/HomeM";
 import Inicio from "../pages/welcome/Inicio";
-localStorage.setItem("role","STUDENT")
+localStorage.setItem("role","STUDENT") 
 export const HandlerRole = ({currentRoute}) => {
-  const currentRole = localStorage.getItem('role');
+  const currentRole = localStorage.getItem('role'); 
   const determinateComponentByRole = () => {
-    //tenemos x roles -> 2 'STUDENT' AND 'MONITOR'.
+    //tenemos x roles -> 2 'STUDENT' AND 'MONITOR'. 
     switch(currentRoute) {
       case 'inicio':
-            return currentRole === 'STUDENT' ? <Inicio/> : <HomeM/>;  
+            return currentRole === 'STUDENT' ? <Inicio/> : <HomeM/>; 
       default:
         return null;
     }

@@ -54,3 +54,10 @@
     width: 100%;;
     display: inline;
 }
+
+.nav-button{
+    background-color: rgb(235, 162, 5);
+    width: 100px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+}

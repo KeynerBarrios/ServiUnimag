@@ -1,9 +1,26 @@
 import React from 'react'
 import './HomeM.css'
-import NavbarP from '../../components/navegacion/NavbarP'
 import Logo from '../../assets/img/logo.png'
+import { useNavigate } from 'react-router-dom';
 
 function HomeM() {
+    const navega = useNavigate();
+    const lista = () => {
+        navega('/listadoe')
+    }
+    const naveg = useNavigate();
+    const cambiar = () => {
+        naveg('/cambiar')
+    }
+    const nave = useNavigate();
+    const registrar = () => {
+        nave('/registrar')
+    }
+
+    
+    
+
+    
   return (
     <>
     <h1 className='title-Home-monitor'>perfil monitor</h1>
@@ -49,9 +66,9 @@ function HomeM() {
         </table>
     </div>
     <div className='buttonsolicitud-home'>
-        <button className='registro'>registrar horario</button>
-        <button className='registro'>cambiar horario</button>
-        <button className='registro'>lista de estudiantes</button>
+        <button onClick={registrar} className='registro'>registrar horario</button>
+        <button onClick={cambiar} className='registro'>cambiar horario</button>
+        <button onClick={lista}  className='registro'>lista de estudiantes</button>
     </div>
     </>
   )
